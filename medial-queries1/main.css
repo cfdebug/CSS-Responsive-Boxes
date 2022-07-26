@@ -1,3 +1,43 @@
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+
+}
+
+* {
+  border: 1px solid rgb(158, 5, 5);
+}
+
+.b {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+  margin: 1em;
+}
+
+.a, .c {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 1em;
+}
+
+/* When screen is wider than 600px */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100%;
+  }
+}
